@@ -6,7 +6,7 @@ import { Hotel } from "../types";
 import { Text, View } from "./Themed";
 import ImageBackgroundWithPlaceholder from "./ImageBackgroundWithPlaceholder";
 
-export default function SmallCard(
+export default function PortraitCard(
   props: Hotel & { onPress?: (hotel: Hotel) => void }
 ) {
   const {

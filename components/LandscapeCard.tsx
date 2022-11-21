@@ -7,7 +7,7 @@ import { getSignFromCurrency } from "../utils";
 import { Text } from "./Themed";
 import ImageWithPlaceholder from "./ImageWithPlaceholder";
 
-export default function LongCard(
+export default function LandscapeCard(
   props: Hotel & { onPress?: (hotel: Hotel) => void }
 ) {
   const {

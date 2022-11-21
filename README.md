@@ -1,1 +1,1 @@
-# hotel-booking-app# expo-app
+# hotel-booking-app

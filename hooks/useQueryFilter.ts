@@ -14,16 +14,14 @@ export const useQueryFilter = (sourceData: Hotel[]): Hotel[] => {
           switch (filter?.value) {
             case "price":
               if (filter?.order === "desc") {
-                filteredData.sort((a, b) => b.price - a.price);
+                return filteredData.sort((a, b) => b.price - a.price);
               }
-              filteredData.sort((a, b) => a.price - b.price);
-              break;
+              return filteredData.sort((a, b) => a.price - b.price);
             case "rating":
               if (filter?.order === "desc") {
-                filteredData.sort((a, b) => a.userRating - b.userRating);
+                return filteredData.sort((a, b) => a.userRating - b.userRating);
               }
-              filteredData.sort((a, b) => b.userRating - a.userRating);
-              break;
+              return filteredData.sort((a, b) => b.userRating - a.userRating);
             default:
               break;
           }
@@ -32,5 +30,5 @@ export const useQueryFilter = (sourceData: Hotel[]): Hotel[] => {
       }
     }
     return sourceData
-  }, [query, filter])
+  }, [sourceData, query, filter])
 }

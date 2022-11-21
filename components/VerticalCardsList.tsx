@@ -1,7 +1,7 @@
 import React from "react";
 import { Hotel } from "../types";
 import Divider from "./Divider";
-import LongCard from "./LongCard";
+import LandscapeCard from "./LandscapeCard";
 
 export default function VerticalCardsList({
   data,
@@ -14,7 +14,7 @@ export default function VerticalCardsList({
     <>
       {data.map((hotel: Hotel, index: number) => (
         <React.Fragment key={hotel.id}>
-          <LongCard {...hotel} onPress={onPress} />
+          <LandscapeCard {...hotel} onPress={onPress} />
           {index < data.length && <Divider horizontal />}
         </React.Fragment>
       ))}

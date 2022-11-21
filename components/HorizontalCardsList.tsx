@@ -2,7 +2,7 @@ import React from "react";
 import { FlatList, StyleProp, ViewStyle,StyleSheet } from "react-native";
 import { Hotel } from "../types";
 import Divider from "./Divider";
-import SmallCard from "./SmallCard";
+import PortraitCard from "./PortraitCard";
 
 export default function HorizontalCardsList({
   data,
@@ -16,7 +16,7 @@ export default function HorizontalCardsList({
   return (
     <FlatList
       data={data}
-      renderItem={({ item }) => <SmallCard {...item} onPress={onPress} />}
+      renderItem={({ item }) => <PortraitCard {...item} onPress={onPress} />}
       keyExtractor={(item) => item.id.toString()}
       horizontal
       showsHorizontalScrollIndicator={false}

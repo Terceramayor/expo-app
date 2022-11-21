@@ -26,7 +26,6 @@ export default function useCachedResources() {
 
   let [fontsLoaded] = useFonts({
     ...FontAwesome.font,
-    "space-mono": require("../assets/fonts/SpaceMono-Regular.ttf"),
     Montserrat_100Thin,
     Montserrat_300Light,
     Montserrat_200ExtraLight,
